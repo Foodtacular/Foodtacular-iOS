@@ -61,24 +61,6 @@ An app that allows users to plan and track their diet and health.
 
 **Tab Navigation** (Tab to Screen)
 
-* Music selection
-* Profile
-* Settings
-
-Optional:
-* Music/Encounter Queue
-* Discover (Top Choices)
-
-**Flow Navigation** (Screen to Screen)
-* Forced Log-in -> Account creation if no log in is available
-* Music Selection (Or Queue if Optional) -> Jumps to Chat
-* Profile -> Text field to be modified. 
-* Settings -> Toggle settings
------------------------------------------------------------------------------------------------------------------
-### 3. Navigation
-
-**Tab Navigation** (Tab to Screen)
-
 * Day's Nutrition setter
 * Feed View
 * Settings
