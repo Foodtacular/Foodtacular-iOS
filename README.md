@@ -75,7 +75,7 @@ An app that allows users to plan and track their diet and health.
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+<img src="https://i.imgur.com/ummsM7x.jpg" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
 
