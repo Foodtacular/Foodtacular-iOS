@@ -9,11 +9,9 @@
 
 ## Overview
 ### Description
-[Description of your app]
 An app that allows users to plan and track their diet and health.
 
 ### App Evaluation
-[Evaluation of your app across the following attributes]
 - **Category: Health**
 - **Mobile: iOS**
 - **Story: **
@@ -27,8 +25,6 @@ An app that allows users to plan and track their diet and health.
 
 **Required Must-have Stories**
 
-* [fill in your required user stories here]
-* ...
 * Login Page
 * API Requests for Food
 * Ingredients Aggregator (Summing up the calories)
@@ -36,8 +32,6 @@ An app that allows users to plan and track their diet and health.
 
 **Optional Nice-to-have Stories**
 
-* [fill in your required user stories here]
-* ...
 * Calendar view with data for each date.
 * Graph view with progess indicator
 * Settings page
@@ -74,7 +68,6 @@ An app that allows users to plan and track their diet and health.
 * Settings page -> User can change goals.
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
 <img src="https://i.imgur.com/ummsM7x.jpg" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
@@ -82,10 +75,70 @@ An app that allows users to plan and track their diet and health.
 ### [BONUS] Interactive Prototype
 
 ## Schema 
-[This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+#### Post
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | objectId      | String   | unique id for the user post (default field) |
+   | author        | Pointer to User| submission author |
+   | image         | File     | image submitted by author |
+   | description   | String   | description by author |
+   | ingredients   | Hash     | ingredients for recipe |
+   | favorites     | Number   | favorited items by the author |
+   | likesCount    | Number   | number of likes for the post |
+   | createdAt     | DateTime | date when post is created (default field) |
+   | updatedAt     | DateTime | date when post is last updated (default field) |
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+#### List of network requests by screen
+   - Home Feed Screen
+      - (Read/GET) Query all posts where user is author
+         ```swift
+         let query = PFQuery(className:"Post")
+         query.whereKey("author", equalTo: currentUser)
+         query.order(byDescending: "createdAt")
+         query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+            if let error = error { 
+               print(error.localizedDescription)
+            } else if let posts = posts {
+               print("Successfully retrieved \(posts.count) posts.")
+           // TODO: Do something with posts...
+            }
+         }
+         ```
+      - (Delete) Delete existing recipe
+      - (Create) Create a new recipe
+      - (Create/POST) Create a new like on a post
+      - (Delete) Delete existing like
+      - (Create/POST) Create a new comment on a post
+      - (Delete) Delete existing comment
+   - Create Post Screen
+      - (Create/POST) Create a new post object
+   - Profile Screen
+      - (Read/GET) Query logged in user object
+      - (Update/PUT) Update user profile image
+#### [OPTIONAL:] Existing API Endpoints
+##### An API Of Spoonacular
+- Base URL - [https://api.spoonacular.com/](https://api.spoonacular.com/)
+
+https://api.spoonacular.comapples,+flour,+sugar&number=2
+
+   HTTP Verb | Endpoint | Description
+   ----------|----------|------------
+    `GET`    | /ingredients | get all ingredients
+    `GET`    | /recipes/findByIngredients?ingredients= | return recipes based on selected Ingredients
+    `GET`    | /houses   | get all houses
+    `GET`    | /houses/?name=name | return specific house by name
+
+##### Game of Thrones API
+- Base URL - [https://api.got.show/api](https://api.got.show/api)
+
+   HTTP Verb | Endpoint | Description
+   ----------|----------|------------
+    `GET`    | /cities | gets all cities
+    `GET`    | /cities/byId/:id | gets specific city by :id
+    `GET`    | /continents | gets all continents
+    `GET`    | /continents/byId/:id | gets specific continent by :id
+    `GET`    | /regions | gets all regions
+    `GET`    | /regions/byId/:id | gets specific region by :id
+    `GET`    | /characters/paths/:name | gets a character's path with a given name
