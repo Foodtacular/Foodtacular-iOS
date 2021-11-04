@@ -105,6 +105,18 @@ An app that allows users to plan and track their diet and health.
            // TODO: Do something with posts...
             }
          }
+         
+         let recipe = PFObject(className:"recipe")
+         recipe["creator"] = Username
+         recipe["image"] = true
+         recipe["fav"] = fav
+         recipe.saveInBackground { (succeeded, error)  in
+             if (succeeded) {
+                  // The object has been saved.
+             } else {
+                  // Error 
+             }
+         }
          ```
       - (Delete) Delete existing recipe
       - (Create) Create a new recipe
@@ -126,19 +138,6 @@ https://api.spoonacular.comapples,+flour,+sugar&number=2
    HTTP Verb | Endpoint | Description
    ----------|----------|------------
     `GET`    | /ingredients | get all ingredients
-    `GET`    | /recipes/findByIngredients?ingredients= | return recipes based on selected Ingredients
-    `GET`    | /houses   | get all houses
-    `GET`    | /houses/?name=name | return specific house by name
-
-##### Game of Thrones API
-- Base URL - [https://api.got.show/api](https://api.got.show/api)
-
-   HTTP Verb | Endpoint | Description
-   ----------|----------|------------
-    `GET`    | /cities | gets all cities
-    `GET`    | /cities/byId/:id | gets specific city by :id
-    `GET`    | /continents | gets all continents
-    `GET`    | /continents/byId/:id | gets specific continent by :id
-    `GET`    | /regions | gets all regions
-    `GET`    | /regions/byId/:id | gets specific region by :id
-    `GET`    | /characters/paths/:name | gets a character's path with a given name
+    `GET`    | /recipes/findByIngredients?ingredients= | return recipes
+    `GET`    | /recipes/{id}/nutritionWidget.json   | gets nutrition for recipe
+    `GET`    | /food/menuItems/search?query=burger&number=2 | return information from restaurants
