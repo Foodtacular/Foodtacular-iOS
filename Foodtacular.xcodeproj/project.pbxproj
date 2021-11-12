@@ -13,6 +13,7 @@
 		1F78D074273F14DB002DAD75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F78D072273F14DB002DAD75 /* Main.storyboard */; };
 		1F78D076273F14DD002DAD75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F78D075273F14DD002DAD75 /* Assets.xcassets */; };
 		1F78D079273F14DD002DAD75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F78D077273F14DD002DAD75 /* LaunchScreen.storyboard */; };
+		1FE213A7273F1E99004C36D6 /* SpoonacularAPICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE213A6273F1E99004C36D6 /* SpoonacularAPICaller.swift */; };
 		C0ABA94E276985F567260EBE /* Pods_Foodtacular.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3140890BB43F5AC83A26CB2F /* Pods_Foodtacular.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		1F78D075273F14DD002DAD75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F78D078273F14DD002DAD75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F78D07A273F14DD002DAD75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FE213A6273F1E99004C36D6 /* SpoonacularAPICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpoonacularAPICaller.swift; sourceTree = "<group>"; };
 		3140890BB43F5AC83A26CB2F /* Pods_Foodtacular.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Foodtacular.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF052DDD4861941BF03F280 /* Pods-Foodtacular.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foodtacular.release.xcconfig"; path = "Target Support Files/Pods-Foodtacular/Pods-Foodtacular.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,6 +72,7 @@
 				1F78D075273F14DD002DAD75 /* Assets.xcassets */,
 				1F78D077273F14DD002DAD75 /* LaunchScreen.storyboard */,
 				1F78D07A273F14DD002DAD75 /* Info.plist */,
+				1FE213A6273F1E99004C36D6 /* SpoonacularAPICaller.swift */,
 			);
 			path = Foodtacular;
 			sourceTree = "<group>";
@@ -88,7 +91,6 @@
 				09050F6C1F6D9B1BEC7834CC /* Pods-Foodtacular.debug.xcconfig */,
 				FDF052DDD4861941BF03F280 /* Pods-Foodtacular.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -190,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F78D071273F14DB002DAD75 /* ViewController.swift in Sources */,
+				1FE213A7273F1E99004C36D6 /* SpoonacularAPICaller.swift in Sources */,
 				1F78D06D273F14DB002DAD75 /* AppDelegate.swift in Sources */,
 				1F78D06F273F14DB002DAD75 /* SceneDelegate.swift in Sources */,
 			);
