@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Parse
+
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -13,10 +15,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+ 
+        
+        let parseConfig = ParseClientConfiguration {
+                $0.applicationId = "qEBVyzXCHaCxf38jCbmAvoYFjonkJ2jCvDdK6YLP" // <- UPDATE
+                $0.clientKey = "kKW18Q02SWObt6K02ryW4QjiacOEbPlPnDkDi5L5" // <- UPDATE
+                $0.server = "https://parseapi.back4app.com"
+        }
+        Parse.initialize(with: parseConfig)
+        
+        // --- end copy
+        
+        
         // Override point for customization after application launch.
         return true
     }
-
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {

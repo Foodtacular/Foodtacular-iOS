@@ -13,6 +13,8 @@
 		1F78D074273F14DB002DAD75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F78D072273F14DB002DAD75 /* Main.storyboard */; };
 		1F78D076273F14DD002DAD75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F78D075273F14DD002DAD75 /* Assets.xcassets */; };
 		1F78D079273F14DD002DAD75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F78D077273F14DD002DAD75 /* LaunchScreen.storyboard */; };
+		38840D31273F1A3B004F7E3A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38840D30273F1A3B004F7E3A /* LoginViewController.swift */; };
+		38840D33273F1A51004F7E3A /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38840D32273F1A51004F7E3A /* FeedViewController.swift */; };
 		C0ABA94E276985F567260EBE /* Pods_Foodtacular.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3140890BB43F5AC83A26CB2F /* Pods_Foodtacular.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +29,8 @@
 		1F78D078273F14DD002DAD75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F78D07A273F14DD002DAD75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3140890BB43F5AC83A26CB2F /* Pods_Foodtacular.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Foodtacular.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38840D30273F1A3B004F7E3A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		38840D32273F1A51004F7E3A /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		FDF052DDD4861941BF03F280 /* Pods-Foodtacular.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foodtacular.release.xcconfig"; path = "Target Support Files/Pods-Foodtacular/Pods-Foodtacular.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,6 +71,8 @@
 				1F78D06E273F14DB002DAD75 /* SceneDelegate.swift */,
 				1F78D070273F14DB002DAD75 /* ViewController.swift */,
 				1F78D072273F14DB002DAD75 /* Main.storyboard */,
+				38840D30273F1A3B004F7E3A /* LoginViewController.swift */,
+				38840D32273F1A51004F7E3A /* FeedViewController.swift */,
 				1F78D075273F14DD002DAD75 /* Assets.xcassets */,
 				1F78D077273F14DD002DAD75 /* LaunchScreen.storyboard */,
 				1F78D07A273F14DD002DAD75 /* Info.plist */,
@@ -88,7 +94,6 @@
 				09050F6C1F6D9B1BEC7834CC /* Pods-Foodtacular.debug.xcconfig */,
 				FDF052DDD4861941BF03F280 /* Pods-Foodtacular.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -189,7 +194,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38840D31273F1A3B004F7E3A /* LoginViewController.swift in Sources */,
 				1F78D071273F14DB002DAD75 /* ViewController.swift in Sources */,
+				38840D33273F1A51004F7E3A /* FeedViewController.swift in Sources */,
 				1F78D06D273F14DB002DAD75 /* AppDelegate.swift in Sources */,
 				1F78D06F273F14DB002DAD75 /* SceneDelegate.swift in Sources */,
 			);
