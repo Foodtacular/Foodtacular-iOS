@@ -23,7 +23,7 @@ class LoginViewController: UIViewController {
     
     @IBAction func onSignUp(_ sender: Any) {
         let user = PFUser()
-        user.username = usernameField.text
+          user.username = usernameField.text
         user.password = passwordField.text
         
         user.signUpInBackground{ (success , error) in
