@@ -141,3 +141,12 @@ https://api.spoonacular.comapples,+flour,+sugar&number=2
     `GET`    | /recipes/findByIngredients?ingredients= | return recipes
     `GET`    | /recipes/{id}/nutritionWidget.json   | gets nutrition for recipe
     `GET`    | /food/menuItems/search?query=burger&number=2 | return information from restaurants
+    
+    
+
+What we have so far :
+    
+    <img src="http://g.recordit.co/SNHFMgGeSd.gif" width=600>
+
+    
+    
