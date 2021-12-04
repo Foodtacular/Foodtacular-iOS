@@ -146,6 +146,6 @@ https://api.spoonacular.comapples,+flour,+sugar&number=2
 
 What we have so far :
     
-<img src="http://g.recordit.co/SNHFMgGeSd.gif" width=200>
+<img src="http://g.recordit.co/O0r0Q1xHeD.gif" width=200>
     
     
